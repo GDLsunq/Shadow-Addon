@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ii",
+        "//i",
+        " ii"
+    ],
+    "key": {
+        "i": {
+            "item": "create:shadow_steel"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "shadowaddon:shadow_steel_hammer",
+        "count": 1
+    }
+}

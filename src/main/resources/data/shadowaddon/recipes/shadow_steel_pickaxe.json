@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#N#",
+    " / ",
+    " / "
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "shadowaddon:shadow_steel_plate"
+    },
+    "N":
+    {
+      "item": "minecraft:netherite_pickaxe"
+    },
+    "/":
+    {
+      "item": "shadowaddon:reinforced_tool_handle"
+    }
+  },
+  "result":
+  {
+    "item": "shadowaddon:shadow_steel_pickaxe"
+
+  }
+}

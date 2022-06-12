@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "addition": {
+    "item": "shadowaddon:shadow_steel_block"
+  },
+  "result": {
+    "item": "shadowaddon:shadow_steel_chestplate"
+  }
+}

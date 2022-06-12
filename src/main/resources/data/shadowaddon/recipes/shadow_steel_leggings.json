@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "shadowaddon:shadow_steel_block"
+  },
+  "result": {
+    "item": "shadowaddon:shadow_steel_leggings"
+  }
+}

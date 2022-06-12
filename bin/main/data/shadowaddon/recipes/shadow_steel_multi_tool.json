@@ -1,0 +1,32 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#NS",
+    "ZJE",
+    " J "
+  ],
+  "key": {
+    "#": {
+      "item": "shadowaddon:shadow_steel_sword"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "S": {
+      "item": "shadowaddon:shadow_steel_shovel"
+    },
+    "Z": {
+      "item": "shadowaddon:shadow_steel_axe"
+    },
+    "J": {
+      "item": "shadowaddon:reinforced_tool_handle"
+    },
+    "E": {
+      "item": "shadowaddon:shadow_steel_pickaxe"
+    }
+  },
+  "result": {
+    "item": "shadowaddon:shadow_steel_multi_tool"
+  }
+}

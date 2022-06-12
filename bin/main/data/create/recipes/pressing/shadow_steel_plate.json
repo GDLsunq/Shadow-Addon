@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create:shadow_steel"
+    }
+  ],
+  "results": [
+    {
+      "item": "shadowaddon:shadow_steel_plate"
+    }
+  ]
+}

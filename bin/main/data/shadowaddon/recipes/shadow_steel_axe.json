@@ -1,0 +1,23 @@
+{
+"type": "minecraft:crafting_shaped",
+"pattern": [
+"#C ",
+"#/ ",
+" / "
+],
+"key": {
+"#": {
+"item": "shadowaddon:shadow_steel_plate"
+},
+"C": {
+"item": "minecraft:netherite_axe"
+},
+"/": {
+"item": "shadowaddon:reinforced_tool_handle"
+}
+},
+"result": {
+  "item": "shadowaddon:shadow_steel_axe",
+  "cont": 1
+}
+}

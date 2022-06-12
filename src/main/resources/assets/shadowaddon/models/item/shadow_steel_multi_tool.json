@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "shadowaddon:items/shadow_steel_multi_tool"
+  }
+  }
