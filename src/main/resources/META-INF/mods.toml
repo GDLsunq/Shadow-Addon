@@ -23,7 +23,7 @@ ordering = "NONE"
 side = "BOTH"
 [[dependencies.shadowaddon]]
 modId="create"
-mandatory=true
+mandatory=false
 versionRange="[mc1.18.1_v0.4.1,)"
 ordering="NONE"
 side="BOTH"
