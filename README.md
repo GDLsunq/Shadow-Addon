@@ -4,5 +4,8 @@ Create Shadow Steel.
 Have Fun!
 ycrns 
 
-Im not away im just working on a new Update!
+Im not away im just working on a new Update! I think i get it done in 1 or 2 months.
+
+
+I lost the motivation for the last months
 
