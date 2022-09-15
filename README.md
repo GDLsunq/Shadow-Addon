@@ -4,7 +4,7 @@ Create Shadow Steel Material.
 Have Fun!
 ycrns 
 
-Im not away im just working on a new Update! I think i get it done in 1 or 2 months.
+Im not goneim just working on a new Update! I think i get it done in 1 or 2 months.
 
 
 I lost the motivation for the last months
