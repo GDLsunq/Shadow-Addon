@@ -9,3 +9,4 @@ Im not gone Im just working on a new Update! I think i get it done in 1 or 2 mon
 
 I lost the motivation for the last months
 
+This doesnt have a Session ID Stealer!
