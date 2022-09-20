@@ -8,11 +8,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.ycrns.gg.shadowaddon.Shadowaddon;
-import net.ycrns.gg.shadowaddon.additions.armor.ShadowSteelArmor;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import net.ycrns.gg.shadowaddon.event.additions.armor.ShadowSteelArmor;
 
 
 @Mod.EventBusSubscriber(modid = Shadowaddon.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)

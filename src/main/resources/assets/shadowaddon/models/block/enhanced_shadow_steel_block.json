@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "shadowaddon:blocks/enhanced_shadow_steel_block"
+  }
+}

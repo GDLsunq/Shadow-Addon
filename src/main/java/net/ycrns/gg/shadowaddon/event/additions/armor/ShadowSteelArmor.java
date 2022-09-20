@@ -1,25 +1,27 @@
-package net.ycrns.gg.shadowaddon.additions.armor;
+package net.ycrns.gg.shadowaddon.event.additions.armor;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.ycrns.gg.shadowaddon.additions.CreativeTab;
-import net.ycrns.gg.shadowaddon.additions.items.ItemLoader;
-
+import net.ycrns.gg.shadowaddon.event.additions.CreativeTab;
+import net.ycrns.gg.shadowaddon.event.additions.items.ItemLoader;
 
 
 public abstract class ShadowSteelArmor extends ArmorItem
 {
     public ShadowSteelArmor(EquipmentSlot slot, Item.Properties properties)
     {
+
         super(new ArmorMaterial()
         {
             @Override
@@ -70,10 +72,11 @@ public abstract class ShadowSteelArmor extends ArmorItem
                 return 0.1f;
             }
         }, slot, properties);
+
     }
     public static class Helmet extends ShadowSteelArmor {
         public Helmet() {
-            super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant());
+            super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant().rarity(Rarity.RARE));
         }
 
         @Override
@@ -84,7 +87,7 @@ public abstract class ShadowSteelArmor extends ArmorItem
 
     public static class Chestplate extends ShadowSteelArmor {
         public Chestplate() {
-            super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant());
+            super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant().rarity(Rarity.RARE));
         }
 
         @Override
@@ -95,7 +98,7 @@ public abstract class ShadowSteelArmor extends ArmorItem
 
     public static class Leggings extends ShadowSteelArmor {
         public Leggings() {
-            super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant());
+            super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant().rarity(Rarity.RARE));
         }
 
         @Override
@@ -106,7 +109,7 @@ public abstract class ShadowSteelArmor extends ArmorItem
 
     public static class Boots extends ShadowSteelArmor {
         public Boots() {
-            super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant());
+            super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeTab.TAB_SHADOWADDON).fireResistant().rarity(Rarity.RARE));
         }
 
         @Override
@@ -122,5 +125,24 @@ public abstract class ShadowSteelArmor extends ArmorItem
                 player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof ShadowSteelArmor;
     }
 
+    @Override
+    public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer)
+    {
+        return true;
+    }
+
+    @Override
+    public void onArmorTick(ItemStack stack, Level world, Player player)
+    {
+        if (!world.isClientSide()){
+            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400));
+            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100,1));
+            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100,1));
+            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100,2));
+            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 100, 1));
+        }
+    }
 }
+
+
 

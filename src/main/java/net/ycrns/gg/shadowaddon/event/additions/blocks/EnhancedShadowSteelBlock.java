@@ -1,25 +1,22 @@
-package net.ycrns.gg.shadowaddon.additions.blocks;
+package net.ycrns.gg.shadowaddon.event.additions.blocks;
 
 import net.minecraft.world.item.ItemStack;
+
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.core.BlockPos;
-
-
 
 import java.util.Collections;
 import java.util.List;
 
-
-public class ShadowSteelBlock extends Block
+public class EnhancedShadowSteelBlock extends Block
 {
-    public ShadowSteelBlock()
+    public EnhancedShadowSteelBlock()
     {
-        super(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.COPPER).strength(4f, 1200f));
+        super(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).strength(5f, 2000f));
     }
 
     @Override
@@ -30,9 +27,4 @@ public class ShadowSteelBlock extends Block
             return dropsOriginal;
         return Collections.singletonList(new ItemStack(this, 1));
     }
-
-
-
-
-
 }

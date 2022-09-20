@@ -1,11 +1,11 @@
-package net.ycrns.gg.shadowaddon.additions.items;
+package net.ycrns.gg.shadowaddon.event.additions.items;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.ycrns.gg.shadowaddon.additions.CreativeTab;
+import net.ycrns.gg.shadowaddon.event.additions.CreativeTab;
 
 public class ShadowSteelShovel extends ShovelItem
 {

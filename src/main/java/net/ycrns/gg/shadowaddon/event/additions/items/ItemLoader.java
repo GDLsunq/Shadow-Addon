@@ -1,4 +1,4 @@
-package net.ycrns.gg.shadowaddon.additions.items;
+package net.ycrns.gg.shadowaddon.event.additions.items;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -9,9 +9,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.ycrns.gg.shadowaddon.additions.CreativeTab;
-import net.ycrns.gg.shadowaddon.additions.blocks.BlockLoader;
-import net.ycrns.gg.shadowaddon.additions.armor.ShadowSteelArmor;
+import net.ycrns.gg.shadowaddon.event.additions.CreativeTab;
+import net.ycrns.gg.shadowaddon.event.additions.blocks.BlockLoader;
+import net.ycrns.gg.shadowaddon.event.additions.armor.ShadowSteelArmor;
 
 import static net.ycrns.gg.shadowaddon.Shadowaddon.MODID;
 
@@ -29,9 +29,41 @@ public class ItemLoader
     //Shadow Steel Hammer
     public static final RegistryObject<Item> SHADOW_STEEL_HAMMER = REGISTRY.register
             ("shadow_steel_hammer", () -> new ShadowSteelHammer());
-    //Shadow Steel Blockitem
-    public static final RegistryObject<Item> SHADOW_STEEL_BLOCK = block(BlockLoader.SHADOW_STEEL_BLOCK,
-            CreativeTab.TAB_SHADOWADDON);
+    //Flight Core
+    public static final RegistryObject<Item> FLIGHT_CORE = REGISTRY.register
+            ("flight_core", () -> new FlightCore());
+    //Enhanced Shadow Steel
+    public static final RegistryObject<Item>  ENHANCED_SHADOW_STEEL = REGISTRY.register
+            ("enhanced_shadow_steel", () -> new EnhancedShadowSteel());
+    //Shadow Steel Dust
+    public static final RegistryObject<Item> SHADOW_STEEL_DUST = REGISTRY.register
+            ("shadow_steel_dust", () -> new ShadowSteelDust());
+    //Hypergolic Coal
+    public static final RegistryObject<Item> HYPERGOLIC_COAL = REGISTRY.register
+            ("hypergolic_fuel", () -> new HypergolicFuel());
+    //First Armor Star
+    public static final RegistryObject<Item> FIRST_ARMOR_STAR = REGISTRY.register
+            ("first_armor_star", () -> new FirstArmorStar());
+    //Second Armor Star
+    public static final RegistryObject<Item> SECOND_ARMOR_STAR = REGISTRY.register
+            ("second_armor_star", () -> new SecondArmorStar());
+    //Third Armor Star
+    public static final RegistryObject<Item> THIRD_ARMOR_STAR = REGISTRY.register
+            ("third_armor_star", () -> new ThirdArmorStar());
+    //First Armor Star
+    public static final RegistryObject<Item> FOURTH_ARMOR_STAR = REGISTRY.register
+            ("fourth_armor_star", () -> new FourthArmorStar());
+    //First Armor Star
+    public static final RegistryObject<Item> FIFTH_ARMOR_STAR = REGISTRY.register
+            ("fifth_armor_star", () -> new FifthArmorStar());
+    //Block Items
+    public static final RegistryObject<Item> SHADOW_STEEL_BLOCK = block
+            (BlockLoader.SHADOW_STEEL_BLOCK,CreativeTab.TAB_SHADOWADDON);
+    public static final RegistryObject<Item> ENHANCED_SHADOW_STEEL_BLOCK =block
+            (BlockLoader.ENHANCED_SHADOW_STEEL_BLOCK,CreativeTab.TAB_SHADOWADDON);
+
+
+
     //Tools
     public static final RegistryObject<Item> SHADOW_STEEL_PICKAXE = REGISTRY.register
             ("shadow_steel_pickaxe", () -> new ShadowSteelPickaxe());
@@ -42,7 +74,7 @@ public class ItemLoader
     public static final RegistryObject<Item> SHADOW_STEEL_SHOVEL = REGISTRY.register
             ("shadow_steel_shovel", () -> new ShadowSteelShovel());
 
-    //Armor
+    //Shadow Steel Armor 0 Stars
     public static final RegistryObject<Item> SHADOW_STEEL_HELMET = REGISTRY.register
             ("shadow_steel_helmet", () -> new ShadowSteelArmor.Helmet());
     public static final RegistryObject<Item> SHADOW_STEEL_CHESTPLATE = REGISTRY.register
@@ -51,6 +83,8 @@ public class ItemLoader
             ("shadow_steel_leggings", () -> new ShadowSteelArmor.Leggings());
     public static final RegistryObject<Item> SHADOW_STEEL_BOOTS = REGISTRY.register
             ("shadow_steel_boots", () -> new ShadowSteelArmor.Boots());
+
+
 
 
 
