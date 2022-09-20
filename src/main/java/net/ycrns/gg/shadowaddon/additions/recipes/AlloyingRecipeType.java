@@ -1,4 +1,4 @@
-package net.ycrns.gg.shadowaddon.event.additions.recipes;
+package net.ycrns.gg.shadowaddon.additions.recipes;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

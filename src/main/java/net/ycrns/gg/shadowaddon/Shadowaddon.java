@@ -4,10 +4,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.ycrns.gg.shadowaddon.event.additions.CreativeTab;
-import net.ycrns.gg.shadowaddon.event.additions.blocks.BlockLoader;
-import net.ycrns.gg.shadowaddon.event.additions.items.ItemLoader;
-import net.ycrns.gg.shadowaddon.event.additions.recipes.ModRecipes;
+import net.ycrns.gg.shadowaddon.additions.CreativeTab;
+import net.ycrns.gg.shadowaddon.additions.blocks.BlockLoader;
+import net.ycrns.gg.shadowaddon.additions.items.ItemLoader;
+import net.ycrns.gg.shadowaddon.additions.recipes.ModRecipes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,10 +1,10 @@
-package net.ycrns.gg.shadowaddon.event.additions.items;
+package net.ycrns.gg.shadowaddon.additions.items;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.crafting.RecipeType;
-import net.ycrns.gg.shadowaddon.event.additions.CreativeTab;
+import net.ycrns.gg.shadowaddon.additions.CreativeTab;
 
 import javax.annotation.Nullable;
 

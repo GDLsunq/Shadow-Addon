@@ -1,4 +1,4 @@
-package net.ycrns.gg.shadowaddon.event.additions.items;
+package net.ycrns.gg.shadowaddon.additions.items;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -9,9 +9,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.ycrns.gg.shadowaddon.event.additions.CreativeTab;
-import net.ycrns.gg.shadowaddon.event.additions.blocks.BlockLoader;
-import net.ycrns.gg.shadowaddon.event.additions.armor.ShadowSteelArmor;
+import net.ycrns.gg.shadowaddon.additions.CreativeTab;
+import net.ycrns.gg.shadowaddon.additions.blocks.BlockLoader;
+import net.ycrns.gg.shadowaddon.additions.armor.ShadowSteelArmor;
 
 import static net.ycrns.gg.shadowaddon.Shadowaddon.MODID;
 

@@ -1,10 +1,10 @@
-package net.ycrns.gg.shadowaddon.event.additions;
+package net.ycrns.gg.shadowaddon.additions;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.ycrns.gg.shadowaddon.event.additions.items.ItemLoader;
+import net.ycrns.gg.shadowaddon.additions.items.ItemLoader;
 
 public class CreativeTab
 {

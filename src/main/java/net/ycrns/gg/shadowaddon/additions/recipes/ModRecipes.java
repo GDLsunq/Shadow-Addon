@@ -1,4 +1,4 @@
-package net.ycrns.gg.shadowaddon.event.additions.recipes;
+package net.ycrns.gg.shadowaddon.additions.recipes;
 
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;

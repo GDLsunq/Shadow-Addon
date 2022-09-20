@@ -1,4 +1,4 @@
-package net.ycrns.gg.shadowaddon.event.additions.armor;
+package net.ycrns.gg.shadowaddon.additions.armor;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -13,8 +13,8 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.ycrns.gg.shadowaddon.event.additions.CreativeTab;
-import net.ycrns.gg.shadowaddon.event.additions.items.ItemLoader;
+import net.ycrns.gg.shadowaddon.additions.CreativeTab;
+import net.ycrns.gg.shadowaddon.additions.items.ItemLoader;
 
 
 public abstract class ShadowSteelArmor extends ArmorItem

@@ -1,4 +1,4 @@
-package net.ycrns.gg.shadowaddon.event.additions.blocks;
+package net.ycrns.gg.shadowaddon.additions.blocks;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;

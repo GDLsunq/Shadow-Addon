@@ -6,7 +6,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.ycrns.gg.shadowaddon.Shadowaddon;
-import net.ycrns.gg.shadowaddon.event.additions.recipes.AlloyingRecipeType;
+import net.ycrns.gg.shadowaddon.additions.recipes.AlloyingRecipeType;
 
 @Mod.EventBusSubscriber(modid = Shadowaddon.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEventBusEvents
