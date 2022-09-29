@@ -4,9 +4,7 @@ Create Shadow Steel Material.
 Have Fun!
 ycrns 
 
-Next Update: Balacing, Soon
+Next Update: Balacing,  Not Soon
 
 
 I lost the motivation for the last months
-
-This DOES NOT have a Session ID Stealer!
