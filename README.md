@@ -4,7 +4,5 @@ Create Shadow Steel Material.
 Have Fun!
 ycrns 
 
-Next Update: Balacing,  Not Soon
+Next Update: Function of Armor Stars. Not Comming Soon
 
-
-I lost the motivation for the last months
