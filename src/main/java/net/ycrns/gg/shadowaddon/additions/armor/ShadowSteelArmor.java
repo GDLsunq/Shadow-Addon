@@ -83,6 +83,12 @@ public abstract class ShadowSteelArmor extends ArmorItem
         public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
             return "shadowaddon:textures/models/armor/shadow_steel_armor_layer_1.png";
         }
+
+        public void onArmorTick(ItemStack stack, Level world, Player player) {
+            if (!world.isClientSide()) {
+                player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400));
+            }
+        }
     }
 
     public static class Chestplate extends ShadowSteelArmor {
@@ -93,6 +99,13 @@ public abstract class ShadowSteelArmor extends ArmorItem
         @Override
         public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
             return "shadowaddon:textures/models/armor/shadow_steel_armor_layer_1.png";
+        }
+
+        public void onArmorTick(ItemStack stack, Level world, Player player) {
+            if (!world.isClientSide()) {
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100,1));
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100,1));
+            }
         }
     }
 
@@ -105,6 +118,14 @@ public abstract class ShadowSteelArmor extends ArmorItem
         public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
             return "shadowaddon:textures/models/armor/shadow_steel_armor_layer_2.png";
         }
+
+        public void onArmorTick(ItemStack stack, Level world, Player player) {
+            if (!world.isClientSide()) {
+                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100,2));
+            }
+        }
+
+
     }
 
     public static class Boots extends ShadowSteelArmor {
@@ -115,6 +136,12 @@ public abstract class ShadowSteelArmor extends ArmorItem
         @Override
         public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
             return "shadowaddon:textures/models/armor/shadow_steel_armor_layer_1.png";
+        }
+
+        public void onArmorTick(ItemStack stack, Level world, Player player) {
+            if (!world.isClientSide()) {
+                player.addEffect(new MobEffectInstance(MobEffects.JUMP, 100, 1));
+            }
         }
     }
     public static boolean isArmorEquipped(ServerPlayer player)
@@ -131,17 +158,6 @@ public abstract class ShadowSteelArmor extends ArmorItem
         return true;
     }
 
-    @Override
-    public void onArmorTick(ItemStack stack, Level world, Player player)
-    {
-        if (!world.isClientSide()){
-            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400));
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100,1));
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100,1));
-            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100,2));
-            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 100, 1));
-        }
-    }
 }
 
 

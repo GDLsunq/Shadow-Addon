@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'net.ycrns.gg'
-version = '1.18.2-1.0'
+version = '1.18.2-1.2'
 
 java {
     archivesBaseName = 'shadowaddon'
