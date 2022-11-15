@@ -27,7 +27,7 @@ public abstract class ShadowSteelArmor extends ArmorItem
             @Override
             public int getDurabilityForSlot(EquipmentSlot slot)
             {
-                return new int[]{13, 15, 16, 11}[slot.getIndex()] * 37;
+                return new int[]{693,748,841,638}[slot.getIndex()];
             }
 
             @Override
@@ -144,13 +144,7 @@ public abstract class ShadowSteelArmor extends ArmorItem
             }
         }
     }
-    public static boolean isArmorEquipped(ServerPlayer player)
-    {
-        return player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof ShadowSteelArmor &&
-                player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof ShadowSteelArmor &&
-                player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof ShadowSteelArmor &&
-                player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof ShadowSteelArmor;
-    }
+
 
     @Override
     public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer)

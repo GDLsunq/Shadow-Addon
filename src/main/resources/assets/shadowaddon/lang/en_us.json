@@ -22,7 +22,6 @@
   "item.shadowaddon.second_armor_star": "Second Armor Star",
   "item.shadowaddon.third_armor_star": "Third Armor Star",
   "item.shadowaddon.fourth_armor_star": "Fourth Armor Star",
-  "item.shadowaddon.fifth_armor_star": "Fifth Armor Star",
   "item.shadowaddon.shadow_steel_helmet": "Shadow Steel Helmet",
   "item.shadowaddon.shadow_steel_chestplate": "Shadow Steel Chestplate",
   "item.shadowaddon.shadow_steel_leggings": "Shadow Steel Leggings",
@@ -38,5 +37,10 @@
   "item.shadowaddon.shadow_steel_helmet": "Shadow Steel Helmet",
   "item.shadowaddon.shadow_steel_chestplate": "Shadow Steel Chestplate",
   "item.shadowaddon.shadow_steel_leggings": "Shadow Steel Leggings",
-  "item.shadowaddon.shadow_steel_boots": "Shadow Steel Boots"
+  "item.shadowaddon.shadow_steel_boots": "Shadow Steel Boots",
+  "item.shadowaddon.enhanced_shadow_steel_helmet": "Enhanced Shadow Steel Helmet",
+  "item.shadowaddon.enhanced_shadow_steel_chestplate": "Enhanced Shadow Steel Chestplate",
+  "item.shadowaddon.enhanced_shadow_steel_leggings": "Enhanced Shadow Steel Leggings",
+  "item.shadowaddon.enhanced_shadow_steel_boots": "Enhanced Shadow Steel Boots",
+  "item.shadowaddon.armor_upgrader": "Armor Upgrader"
 }

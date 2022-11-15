@@ -3,7 +3,7 @@ loaderVersion = "[40,)" #mandatory This is typically bumped every Minecraft vers
 license = "All Rights Reserved"
 [[mods]] #mandatory
 modId = "shadowaddon" #mandatory
-version = "${file.jarVersion}" #mandatory
+version = "1.18.2-1.3" #mandatory
 displayName = "Shadow Addon" #mandatory
 authors = "ycrns"
 description = '''

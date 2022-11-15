@@ -5,13 +5,14 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 import net.ycrns.gg.shadowaddon.additions.CreativeTab;
 import net.ycrns.gg.shadowaddon.additions.blocks.BlockLoader;
 import net.ycrns.gg.shadowaddon.additions.armor.ShadowSteelArmor;
+import net.ycrns.gg.shadowaddon.additions.armor.EnhancedShadowSteelArmor;
 
 import static net.ycrns.gg.shadowaddon.Shadowaddon.MODID;
 
@@ -50,19 +51,18 @@ public class ItemLoader
     //Third Armor Star
     public static final RegistryObject<Item> THIRD_ARMOR_STAR = REGISTRY.register
             ("third_armor_star", () -> new ThirdArmorStar());
-    //First Armor Star
+    //Fourth Armor Star
     public static final RegistryObject<Item> FOURTH_ARMOR_STAR = REGISTRY.register
             ("fourth_armor_star", () -> new FourthArmorStar());
-    //First Armor Star
-    public static final RegistryObject<Item> FIFTH_ARMOR_STAR = REGISTRY.register
-            ("fifth_armor_star", () -> new FifthArmorStar());
+    //Armor Upgrader
+    public static final RegistryObject<Item> ARMOR_UPGRADER = REGISTRY.register
+            ("armor_upgrader", () -> new ArmorUpgrader());
+
     //Block Items
     public static final RegistryObject<Item> SHADOW_STEEL_BLOCK = block
             (BlockLoader.SHADOW_STEEL_BLOCK,CreativeTab.TAB_SHADOWADDON);
     public static final RegistryObject<Item> ENHANCED_SHADOW_STEEL_BLOCK =block
             (BlockLoader.ENHANCED_SHADOW_STEEL_BLOCK,CreativeTab.TAB_SHADOWADDON);
-
-
 
     //Tools
     public static final RegistryObject<Item> SHADOW_STEEL_PICKAXE = REGISTRY.register
@@ -74,7 +74,7 @@ public class ItemLoader
     public static final RegistryObject<Item> SHADOW_STEEL_SHOVEL = REGISTRY.register
             ("shadow_steel_shovel", () -> new ShadowSteelShovel());
 
-    //Shadow Steel Armor 0 Stars
+    //Shadow Steel Armor
     public static final RegistryObject<Item> SHADOW_STEEL_HELMET = REGISTRY.register
             ("shadow_steel_helmet", () -> new ShadowSteelArmor.Helmet());
     public static final RegistryObject<Item> SHADOW_STEEL_CHESTPLATE = REGISTRY.register
@@ -83,6 +83,16 @@ public class ItemLoader
             ("shadow_steel_leggings", () -> new ShadowSteelArmor.Leggings());
     public static final RegistryObject<Item> SHADOW_STEEL_BOOTS = REGISTRY.register
             ("shadow_steel_boots", () -> new ShadowSteelArmor.Boots());
+
+    //Enhanced Shadow Steel Armor
+    public static final RegistryObject<Item> ENHANCED_SHADOW_STEEL_HELMET = REGISTRY.register
+            ("enhanced_shadow_steel_helmet", () -> new EnhancedShadowSteelArmor.Helmet());
+    public static final RegistryObject<Item> ENHANCED_SHADOW_STEEL_CHESTPLATE = REGISTRY.register
+            ("enhanced_shadow_steel_chestplate", () -> new EnhancedShadowSteelArmor.Chestplate());
+    public static final RegistryObject<Item> ENHANCED_SHADOW_STEEL_LEGGINGS = REGISTRY.register
+            ("enhanced_shadow_steel_leggings", () -> new EnhancedShadowSteelArmor.Leggings());
+    public static final RegistryObject<Item> ENHANCED_SHADOW_STEEL_BOOTS = REGISTRY.register
+            ("enhanced_shadow_steel_boots", () -> new EnhancedShadowSteelArmor.Boots());
 
 
 
